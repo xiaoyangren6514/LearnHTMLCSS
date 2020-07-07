@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            position: relative;
+            font-size: 14px;
+            /* margin-left: 300px; */
+            text-align: center;
+        }
+
+        .box>span {
+            display: block;
+            width: 100px;
+            /* background-color: red; */
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .box .downloadapp {
+            display: none;
+            position: absolute;
+            width: 120px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #eaeaea;
+            padding: 1px 1px;
+            left: 0px;
+            right: 0px;
+            top: 30px;
+            /* margin-left: 30px; */
+        }
+
+        .box .downloadapp span {
+            display: block;
+            text-align: center;
+        }
+
+        .arrow {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            margin: 0 auto;
+            top: -3px;
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            border-left: 1px solid blue;
+            border-top: 1px solid blue;
+            transform: rotate(45deg);
+        }
+
+        .box span:hover+.downloadapp {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <span>手机考拉</span>
+        <div class="downloadapp">
+            <div class="arrow"></div>
+            <img src="./images/qrcode.png" alt="">
+            <span>下载App</span>
+            <span>领1000元新人礼包</span>
+        </div>
+    </div>
+</body>
+
+</html>

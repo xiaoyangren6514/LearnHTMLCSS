@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        i {
+            font-style: normal;
+        }
+
+        .right-aside {
+            position: fixed;
+            right: 30px;
+            top: 100px;
+            border: 1px solid #eee;
+        }
+
+        .right-aside a {
+            display: inline-block;
+            width: 62px;
+            height: 48px;
+            padding-top: 12px;
+            font-size: 12px;
+            border-bottom: 1px solid #eaeaea;
+            text-align: center;
+        }
+
+        .right-aside a:last-child {
+            border-bottom: none;
+        }
+
+        .right-aside a i {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto 3px;
+            /* background-color: rebeccapurple; */
+        }
+
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .right-aside ul li a:hover {
+            color: #ff1e32;
+            background-color: #fefefe;
+        }
+
+        .signin i {
+            background-image: url('./images/icon-aside-right-signin.png');
+        }
+
+        .shopcart i {
+            background-image: url('./images/icon-aside-right-cart.png');
+        }
+
+        .download i {
+            background-image: url('./images/icon-aside-right-phone.png');
+        }
+
+        .top i {
+            background-image: url('./images/icon-aside-right-top.png');
+        }
+
+        .signin:hover i {
+            background-image: url('./images/icon-aside-right-signin-active.png');
+        }
+
+        .shopcart:hover i {
+            background-image: url('./images/icon-aside-right-cart-active.png');
+        }
+
+        .download:hover i {
+            background-image: url('./images/icon-aside-right-phone-active.png');
+        }
+
+        .top:hover i {
+            background-image: url('./images/icon-aside-right-top-active.png');
+        }
+
+        /* .right-aside ul .top:hover i {
+            background-image: url("./images/icon-aside-right-top-active.png");
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="right-aside">
+            <ul>
+                <li>
+                    <a class="signin" href="">
+                        <i class="signini"></i>
+                        <span>签到</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="shopcart" href="">
+                        <i></i>
+                        <span>购物车</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="download" href="">
+                        <i></i>
+                        <span>下载</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="top" href="">
+                        <i></i>
+                        <span>TOP</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
